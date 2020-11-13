@@ -18,13 +18,13 @@ export class ContactPageComponent implements OnInit {
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
     this.listing = fakeListings.find(listing => listing.id);
-    this.message = `Hi, I am interested in your ${this.listing.name.toLowerCase()}!`;
+    this.message = `Hi, I am interested in your ${this.listing.name.toLowerCase()}!`;  //note the use of the ticks and not quotes and the single bracket + $ sign
   }
 
   //method when user presses submit button
-  endMessage() : void {
+  sendMessage() : void {  //void is specifying that this method will not return anything
     alert('Your message has been sent!');
-    this.router.navigateByUrl('/listings');
+    this.router.navigateByUrl('/listings');  //Router will redirect you to the listings page.
   }
 
 }

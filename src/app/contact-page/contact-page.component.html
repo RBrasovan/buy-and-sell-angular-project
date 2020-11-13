@@ -1,1 +1,16 @@
-<p>contact-page works!</p>
+<div class="content-box">
+  <h3>Contact Form</h3>
+  <div>
+    <label>
+      Your email Address
+      <input name="email" [(ngModel)]= "email" /> <!--the ngModel is basically how you can then referance the value. I think.-->
+    </label>
+  </div>
+  <div>
+    <label>
+      Message
+      <textarea name="message" rows="5" cols="10" [(ngModel)] = "message"></textarea>
+    </label>
+  </div>
+  <button (click)="sendMessage()">Send</button>  <!-- same as an onClick method. Specifies the method you want to run on click.-->
+</div>
