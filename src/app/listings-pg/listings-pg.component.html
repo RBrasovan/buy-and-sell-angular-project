@@ -1,1 +1,7 @@
-<p>listings-pg works!</p>
+<div>
+  <div class="content-box" *ngFor="let listing of listings"> <!-- for loop of number of listings call them listing and then "listing" can be used to get the parameters of that listing from the class-->
+    <a routerLink="/listings/{{listing.id}}"> <!-- routerLink is used instead of href="link.com"-->
+        <h3>{{listing.name}} - ${{listing.price}}</h3>
+    </a>
+  </div>
+</div>
