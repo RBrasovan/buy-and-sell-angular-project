@@ -11,7 +11,7 @@ const routes: Routes = [
   {path : '', redirectTo : '/listings', pathMatch : 'full'},  //so this is a redirect so if you are on the "home" page, it will redirect you to the /listings page which we made a route for below.
   {path : 'listings', component : ListingsPgComponent, pathMatch : 'full'},
   {path : 'listings/:id', component : ListingDetailPageComponent}, //:id is a URL parameter and is also why pathMatch : 'full' is used on the row above.
-  {path : 'contct/:id', component : ContactPageComponent},
+  {path : 'contact/:id', component : ContactPageComponent},
   {path : 'edit-listing/:id', component : EditListingPageComponent},
   {path : 'my-listings', component : MyListingsPageComponent},
   {path : 'new-listing', component : NewListingPageComponent}
